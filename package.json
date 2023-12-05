@@ -1,0 +1,26 @@
+{
+  "name": "activity-log",
+  "version": "1.0.0",
+  "description": "A simple list of activities with an actor, a date and a description",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build",
+    "lint": "eslint src --ext .js,.jsx"
+  },
+  "author": "Sebastian Oelke (https://www.soelke.de)",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "react": "^18.2",
+    "react-async-hook": "^4.0.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "parcel": "^2.10.3",
+    "prettier": "^3.1.0",
+    "process": "^0.11.10"
+  }
+}
