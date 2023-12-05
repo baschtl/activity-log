@@ -16,10 +16,11 @@
       "version": "detect"
     }
   },
-  "plugins": ["react"],
+  "plugins": ["react", "prettier"],
   "rules": {
     "semi": "error",
     "no-console": 0,
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "prettier/prettier": "error"
   }
 }
