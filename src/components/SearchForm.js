@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function SearchForm(props) {
-  const [search, setSearch] = React.useState("");
+  const [search, setSearch] = React.useState('');
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -11,7 +12,7 @@ export default function SearchForm(props) {
     props.onSearch(query);
   };
 
-  return(
+  return (
     <form>
       <input
         type="text"
@@ -24,5 +25,9 @@ export default function SearchForm(props) {
         onChange={handleChange}
       />
     </form>
-  )
+  );
 }
+
+SearchForm.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+};
