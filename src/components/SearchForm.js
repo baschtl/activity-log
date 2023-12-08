@@ -13,18 +13,20 @@ export default function SearchForm(props) {
   };
 
   return (
-    <form>
-      <input
-        type="text"
-        id="search-input"
-        className="input input__lg"
-        name="search"
-        autoComplete="off"
-        placeholder="Search for activities..."
-        value={search}
-        onChange={handleChange}
-      />
-    </form>
+    <div className="search-container">
+      <form>
+        <input
+          type="text"
+          id="search-input"
+          className="input"
+          name="search"
+          autoComplete="off"
+          placeholder="Search..."
+          value={search}
+          onChange={handleChange}
+        />
+      </form>
+    </div>
   );
 }
 

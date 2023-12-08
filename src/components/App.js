@@ -18,7 +18,7 @@ export default function App(props) {
     .map((a) => <Activity key={a.id} activity={a} />);
 
   return (
-    <div className="activity-log">
+    <div className="activity-log-container">
       <h1>Activity Log</h1>
       <SearchForm onSearch={setSearchQuery} />
 
