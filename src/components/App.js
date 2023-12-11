@@ -5,7 +5,6 @@ import SearchForm from './SearchForm';
 import Activity from './Activity';
 
 export default function App(props) {
-  const [activities] = React.useState(props.activities);
   const [searchQuery, setSearchQuery] = React.useState('');
 
   const activityFilter = (a) => {
@@ -13,7 +12,7 @@ export default function App(props) {
     return a.type.match(regex) || a.description.match(regex);
   };
 
-  const activitiesList = activities
+  const activitiesList = props.activities
     .filter(activityFilter)
     .map((a) => <Activity key={a.id} activity={a} />);
 
